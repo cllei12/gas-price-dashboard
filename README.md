@@ -1,37 +1,16 @@
-# dsci551_gasoline_price
+# gasoline_price
 
-<!-- 
-This template: https://www.creative-tim.com/product/argon-dashboard-bs4
 
-## How to create a new page
 
-e.g. table
+## **Architecture** 
 
-- `controllers/homeController.js`
+![image-20220812142752481](https://s2.loli.net/2022/08/13/jbr2AfGOwVIo8U3.png)
 
-  ```js
-  const tableView =  (req, res, next) => {
-      res.render('table');
-  }
+## Dashboard Demo
 
-  module.exports = {
-      ...,
-      tableView
-  }
-  ``` 
+![img](https://s2.loli.net/2022/08/13/vkMd859EUbecROp.png)
 
-- `routes/home-routes.js`
-
-  ```js
-  const {..., tableView} = require('../controllers/homeController');
-  ...
-  router.get('/table', tableView);
-  ```
-
-- `views`
-
-  `views/table.ejs`: content (html format)
--->
+![img](https://s2.loli.net/2022/08/13/l7SWQXdOMmhaFHr.png)
 
 ## Require
 
@@ -56,6 +35,35 @@ All lib were loaded in index.html without build tools, like node.
 - chart.js
 <!-- - vue-multiselect -->
 
+## Get started
+
+1. Install all dependency of 
+
+    ```shell
+    npm install
+    ```
+
+2. Create an `.env` file in `server` folder for connecting AWS RDS MySQL instance
+
+    Note: you may have no access to our database. If you want more details about this step, feel free to contact me.
+
+    ```
+    PORT=
+    HOST=
+    DB_PORT=
+    USERNAME=
+    PASSWORD=
+    DATABASE=
+    ```
+
+3. Go to `./server` and run the server
+
+   ```shell
+   npm start
+   ```
+
+4. Go to `./client` and open the front-end web
+
 ## Server API Explanation
 
 http://localhost:4999/gasoline?desp=all&scope=cities&col=LosAngeles,NewYorkCity&start=2022-01-01&end=2022-01-31
@@ -76,10 +84,3 @@ http://localhost:4999/gasoline?desp=all&scope=cities&col=LosAngeles,NewYorkCity&
     - Chicago, Cleveland, Denver, Houston, LosAngeles, Miami, NewYorkCity, SanFrancisco, Seattle
 - start
 - end
-
-<!-- ## Get started
-
-```bash
-# ./clent
-npm start
-``` -->
