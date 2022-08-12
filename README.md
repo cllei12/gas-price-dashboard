@@ -1,6 +1,4 @@
-# gasoline_price
-
-
+# Gasoline Price Dashboard
 
 ## **Architecture** 
 
