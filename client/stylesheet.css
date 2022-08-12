@@ -1,0 +1,33 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+  }
+  #img-table {
+    height: 450px;
+  }
+  #img-card {
+    height: 450px;
+  }
+  .table {
+    display: block;
+    height: 400px;
+    overflow-y: scroll;
+  }
+  .table thead th {
+    position: sticky;
+    top: 0;
+   background-color: white;
+  }
+  .table thead tr th {
+    font-weight:900;
+  }
+  thead tr th:first-child,
+tbody tr td:first-child {
+  width: 8em;
+  min-width: 8em;
+  max-width: 8em;
+  word-break: break-all;
+}
+.end {
+  height: 800px;
+}
+
